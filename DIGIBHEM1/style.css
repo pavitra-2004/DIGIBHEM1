@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 14%;
+}
+
+.main-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: left;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.form-wrapper,
+.calculator-wrapper {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 40%;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-size: 1rem;
+}
+
+form input,
+form textarea,
+form button {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form input,
+form textarea {
+    background: #333333;
+    color: #fff;
+}
+
+form button {
+    background: #ff9501;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+form button:hover {
+    transform: scale(1.05);
+}
+
+.container {
+    background-color: black;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.calc-text p {
+    font-size: 3rem;
+    text-align: right;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.calc-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.home-sci {
+    position: fixed;
+    /* Fix the icons position */
+    bottom: 20px;
+    /* Adjust from the top of the screen */
+    left: 30px;
+    /* Adjust from the left side of the screen */
+    z-index: 10;
+    /* Ensure the icons are above other elements */
+    text-align: left;
+}
+
+.home-sci a {
+    font-size: 30px;
+    margin: 0 10px;
+    color: #7fbffc;
+    text-decoration: none;
+}
+
+.home-sci a:hover {
+    color: #007bff;
+    /* Change color on hover */
+}
+
+.home-sci i {
+    transition: transform 0.3s;
+}
+
+.home-sci a:hover i {
+    transform: scale(1.2);
+    /* Enlarge icon on hover */
+}
+
+button {
+    background: #333;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 65px;
+    width: 65px;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.key-zero {
+    grid-column: span 2;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.key-operate {
+    background: #ff9501;
+}
+
+.key-others {
+    background: #a6a6a6;
+    color: #000;
+}
